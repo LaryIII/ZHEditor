@@ -1,0 +1,171 @@
+/**
+ *This is SEditor's config of document structure.
+ *Maybe in the future, '.xml' will be supported by js friendly.
+ *
+ *定义规则：有相同key的必须使用数组root是根，content是根元素里面的内容
+ *
+ *author: harry zhouhai737@gmail.com
+ *eidt time: 2012-11-10 17:16
+ */
+
+ var SEditorConfig = {
+ 	root:'tourSection_unniuren',
+ 	content:{
+ 		'div.tourContent_new':[{
+ 			'div.day_title_new':{
+ 				'h3':{
+ 					'em':{
+ 						'text':'第1天'
+ 					},
+ 					'div#edit':{
+ 						'text':'请在这里输入行程标题'
+ 					}
+ 				},
+ 				'ul.time_s_photo clearfix':[{
+ 					'li':{
+ 						'a':{
+ 							'img#edit':{
+ 								'src':'http://list.image.baidu.com/t/image/w_mengchong.jpg',
+ 								'title':'秦淮河'
+ 							}
+ 						},
+ 						'div':{
+ 							'a#edit':{
+ 								'text':'秦淮河'
+ 							}
+ 						}
+ 					}
+ 				},
+ 				{'li':{
+ 						'a':{
+ 							'img':{
+ 								'src':'http://images.tuniu.com/images/2006-07-30/4/4187UI1l64ymaEW4s.jpg',
+ 								'title':'沙河'
+ 							}
+ 						},
+ 						'div':{
+ 							'a#edit':{
+ 								'text':'沙河'
+ 							}
+ 						}
+ 					}
+ 				}],
+ 				'div.tour_line_f#edit':[{
+ 					'text':'请在这里输入行程描述，内容可以为“航班信息”、“游览路线”等相关内容'
+ 				}]
+ 			},
+ 			'div.tour_food_f':[
+ 				{
+	 				'div.tour_item':{
+	 					'em':{
+	 						'text':'用餐'
+	 					},
+	 					'div':[
+	 						{
+		 						'text':'早餐：',
+		 						'span.po_dining_day#edit':{
+		 							'text':'敬请自理'
+		 						}
+		 					},
+		 					{
+		 						'text':'&#160;午餐：',
+		 						'span.po_dining_day#edit':{
+		 							'text':'敬请自理'
+		 						}
+		 					},
+		 					{
+		 						'text':'&#160;晚餐：',
+		 						'span.po_dining_day#edit':{
+		 							'text':'敬请自理'
+		 						}
+		 					}
+	 					]
+	 				}
+	 			},
+ 				{
+ 					'div.tour_item':{
+	 					'em':{
+	 						'text':'住宿'
+	 					},
+	 					'div#edit':{
+	 						'text':'南京路宝宾馆 2人间或同级（独卫、彩电、热水、空调），以当天入住为准'
+	 					}
+	 				}
+ 				}
+ 			]
+ 		}]
+ 	}
+ }
+
+ var niurenConfig = {
+ 	root: 'tourSection_niuren',
+ 	content: {
+ 		'div.tourContent_new':[{
+ 			'div.day_title_new':{
+ 				'h3':{
+ 					'em':{
+ 						'text':'第1天'
+ 					},
+ 					'div#edit':{
+ 						'text':'请在这里输入行程标题'
+ 					}
+ 				}
+ 			},
+ 			'div.time_box_inner clearfix':[{
+ 				'div.time_num':{
+ 					'div.tour_con#edit':{
+ 						'text':'输入时间'
+ 					}
+ 				}
+ 			},{
+ 				'div.time_do_new':[{
+ 					'div.tour_description#edit':{
+ 						'text':'请在这里输入行程时间段描述'
+ 					}
+ 				},{
+ 					'div.tour_con_h4#edit':{
+ 						'text':'请在这里输入行程小标题'
+ 					}
+ 				},{
+ 					'div.tour_con#edit':{
+ 						'text':'请在这里输入行程小标题正文'
+ 					}
+ 				},{
+ 					'ul.time_img_photo clearfix':[{
+ 						'li':{
+ 							'a.niuren_light':{
+ 								'img#edit':{
+ 									'src':'http://images.tuniu.com/images/2010-05-27/b/b6z2c08XM5pdG9Y7n.jpg'
+ 								}
+ 							},
+ 							'div#edit':{
+ 								'text':'图片标题'
+ 							}
+ 						}
+ 					}]
+ 				}]
+ 			}],
+ 			'div.tour_food':[
+ 				{
+	 				'div.tour_item':{
+	 					'em':{
+	 						'text':'用餐'
+	 					},
+	 					'div#edit':{
+	 						'text':'早餐: 敬请自理  午餐: 敬请自理  晚餐: 敬请自理'
+	 					}
+	 				}
+	 			},
+ 				{
+	 				'div.tour_item':{
+	 					'em':{
+	 						'text':'住宿'
+	 					},
+	 					'div#edit':{
+	 						'text':'三亚：玉海国际或仙居府海景双标间'
+	 					}
+	 				}
+ 				}]
+ 		}]
+ 	}
+ }
